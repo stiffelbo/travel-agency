@@ -10,10 +10,14 @@ const createActionName = name => `app/${reducerName}/${name}`;
 
 // action types
 export const CHANGE_PHRASE = createActionName('CHANGE_PHRASE');
+export const ADD_TAG = createActionName('ADD_TAG');
+export const REMOVE_TAG = createActionName('REMOVE_TAG');
 // TODO - add other action types
 
 // action creators
 export const changeSearchPhrase = payload => ({ payload, type: CHANGE_PHRASE });
+export const addSerachTag = payload => ({ payload, type: ADD_TAG });
+export const removeSerachTag = payload => ({ payload, type: REMOVE_TAG });
 // TODO - add other action creators
 
 // reducer
@@ -23,6 +27,16 @@ export default function reducer(statePart = [], action = {}) {
       return {
         ...statePart,
         searchPhrase: action.payload,
+      };
+    case ADD_TAG:
+      return {
+        ...statePart,
+        tags: action.payload,
+      };
+    case REMOVE_TAG:
+      return {
+        ...statePart,
+        tags: [],
       };
     // TODO - handle other action types
     default:
