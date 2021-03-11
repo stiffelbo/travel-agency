@@ -29,32 +29,43 @@ export default function reducer(statePart = [], action = {}) {
   switch (action.type) {
     case CHANGE_PHRASE:
       return {
+        //wypakowanie reszty stanu sprawia ze fitry się sumują
         ...statePart,
+        //nadpisuje searchPhrase
         searchPhrase: action.payload,
       };
     case ADD_TAG:
       return {
+        //wypakowanie reszty stanu sprawia ze fitry się sumują
         ...statePart,
+        //nadpisuje tags tablicą z tym co już w niej jest oraz nowym tagiem
         tags: [...statePart.tags, action.payload],
       };
     case REMOVE_TAG:
       return {
-        ...statePart,        
+        ...statePart,
+        //filtruje istniejącą tablice o tag który równa sie dostarczonemu tagowi        
         tags: statePart.tags.filter(tag => tag !== action.payload),
       };
     case FROM:
       return {
+        //wypakowanie reszty stanu sprawia ze fitry się sumują
         ...statePart,        
         duration : {
+          //wypakowanie istniejących property które nie mają być zmienione ile by ich było
           ...statePart.duration,
+          //nadpisanie from dostarczonym argumentem
           from: action.payload,
         },
       };
     case TO:
       return {
+        //wypakowanie reszty stanu sprawia ze fitry się sumują
         ...statePart,        
         duration : {
+          //wypakowanie istniejących property które nie mają być zmienione ile by ich było
           ...statePart.duration,
+          //nadpisanie from dostarczonym argumentem
           to: action.payload,
         },
       };
