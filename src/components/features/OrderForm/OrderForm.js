@@ -6,7 +6,7 @@ import OrderSummary from '../OrderSummary/OrderSummary.js';
 import OrderOption from '../OrderOption/OrderOption';
 import pricing from '../../../data/pricing.json';
 
-const OrderForm = ({tripCost, setOrderOption, ...options}) => (
+const OrderForm = ({tripCost, setOrderOption, options}) => (
   <Row>
     {pricing.map(option => (      
       <Col md={4} key={option.id}>

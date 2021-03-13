@@ -11,20 +11,22 @@ const OrderOptionIcons = ({values, currentValue, setOptionValue}) => (
     
     {values.map(value => {
       //setting active to icon
-      let active = 'styles.icon';
-      if(currentValue == value.id){
-        active = 'styles.iconActive';
-      }
+      
       if(value.required){
         return (
-          <div className={active}  onClick={() => (setOptionValue(''))} >
-            <Icon name={'times-circle'}>none</Icon> 
+          <div className={styles.icon}  onClick={() => (setOptionValue(''))} >
+            <Icon name={'times-circle'}></Icon>
+            <strong >{'none'}</strong> 
           </div>
         );
       }
       return(
-        <div key={value.id} className={active}  onClick={() => (setOptionValue(value.id))} >
-          <Icon name={value.icon}></Icon>
+        <div 
+          key={value.id} 
+          className={currentValue == value.id ? styles.iconActive : styles.icon} 
+          onClick={() => (setOptionValue(value.id))} 
+        >
+          <Icon name={value.icon} ></Icon>
           {value.name}({formatPrice(value.price)}) 
         </div>
       );
