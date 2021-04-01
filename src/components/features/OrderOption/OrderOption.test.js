@@ -83,13 +83,7 @@ for(let type in optionTypes){
       subcomponent = component.find(optionTypes[type]);
       renderedSubcomponent = subcomponent.dive();
     });
-    /* common tests */
-    it('passes dummy test', () => {
-      console.log(component.debug());
-      console.log(subcomponent.debug());
-
-    });
-
+   
     /* type-specific tests */
     switch (type) {
       case 'dropdown': {

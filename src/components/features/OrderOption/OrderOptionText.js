@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import styles from './OrderOption.scss';
 
 
-const OrderOptionText = ({currentValue, setOptionValue, name}) => (
+const OrderOptionText = ({currentValue, setOptionValue, name, required}) => (
   <div className={styles.component}>
     <label>
       {name}
@@ -12,6 +12,7 @@ const OrderOptionText = ({currentValue, setOptionValue, name}) => (
         className={styles.text}      
         value={currentValue}       
         onChange={event => setOptionValue(event.currentTarget.value)} 
+        required={required} 
       />
     </label>    
   </div>
@@ -21,6 +22,7 @@ OrderOptionText.propTypes = {
   name: PropTypes.string,
   currentValue: PropTypes.string, 
   setOptionValue: PropTypes.func,
+  required: PropTypes.bool,
 };
 
 export default OrderOptionText;
