@@ -115,6 +115,100 @@
       "tripId": "5cc1d10130dfa407e2e54e20",
       "totalCost": "$51,381",
       "id": 8
+    },
+    {
+      "car-rental": "suv",
+      "accommodation": "suite",
+      "features": [
+        "kitchen"
+      ],
+      "adults": "3",
+      "children": "2",
+      "name": "Jewgienij",
+      "contact": "4455677733",
+      "start-date": "2021-07-08T22:00:00.000Z",
+      "tripName": "Pleasant trek in outstanding Togo",
+      "tripId": "5cc1d10181a30e85c8d9ad4a",
+      "totalCost": "$122,076",
+      "id": 9
+    },
+    {
+      "car-rental": "full",
+      "accommodation": "suite",
+      "features": [
+        "kitchen"
+      ],
+      "adults": "3",
+      "children": "2",
+      "name": "Jewgienij",
+      "contact": "4455677733",
+      "start-date": "2021-07-08T22:00:00.000Z",
+      "tripName": "Tremendous jaunt in strange Tokelau",
+      "tripId": "5cc1d101c3cbdbf3e23c0cb3",
+      "totalCost": "$67,382",
+      "id": 10
+    },
+    {
+      "car-rental": "full",
+      "accommodation": "suite",
+      "features": [
+        "kitchen"
+      ],
+      "adults": "6",
+      "children": "0",
+      "name": "Jewgienij",
+      "contact": "4455677733",
+      "start-date": "2021-07-08T22:00:00.000Z",
+      "tripName": "Tremendous jaunt in strange Tokelau",
+      "tripId": "5cc1d101c3cbdbf3e23c0cb3",
+      "totalCost": "$101,072",
+      "id": 11
+    },
+    {
+      "car-rental": "",
+      "accommodation": "suite",
+      "features": [
+        "all-inclusive"
+      ],
+      "adults": "3",
+      "children": "0",
+      "name": "Jewgien",
+      "contact": "884440000",
+      "start-date": "2021-07-06T22:00:00.000Z",
+      "tripName": "Pleasant travel in cool Turkey",
+      "tripId": "5cc1d10130dfa407e2e54e20",
+      "totalCost": "$156,242",
+      "id": 12
+    },
+    {
+      "car-rental": "suv",
+      "accommodation": "suite",
+      "features": [
+        "all-inclusive"
+      ],
+      "adults": "3",
+      "children": "0",
+      "name": "Jewgien",
+      "contact": "884440000",
+      "start-date": "2021-07-06T22:00:00.000Z",
+      "tripName": "Pleasant travel in cool Turkey",
+      "tripId": "5cc1d10130dfa407e2e54e20",
+      "totalCost": "$156,842",
+      "id": 13
+    },
+    {
+      "car-rental": "full",
+      "accommodation": "house",
+      "features": [],
+      "adults": 1,
+      "children": "2",
+      "name": "Jewgienij",
+      "contact": "7788866555",
+      "start-date": "2021-07-10T22:00:00.000Z",
+      "tripName": "Pleasant travel in cool Turkey",
+      "tripId": "5cc1d10130dfa407e2e54e20",
+      "totalCost": "$104,962",
+      "id": 14
     }
   ]
 }
